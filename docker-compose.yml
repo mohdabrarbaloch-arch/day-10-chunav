@@ -1,0 +1,36 @@
+services:
+  db:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_USER: chunav
+      POSTGRES_PASSWORD: chunav
+      POSTGRES_DB: chunav
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U chunav -d chunav"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+    ports:
+      - "5432:5432"
+
+  app:
+    build: .
+    depends_on:
+      db:
+        condition: service_healthy
+    environment:
+      ENVIRONMENT: production
+      # Override this in any real deployment. The compose file is for local
+      # verification, not for shipping.
+      SECRET_KEY: change-me-this-is-a-local-compose-key-32chars
+      DATABASE_URL: postgresql+psycopg://chunav:chunav@db:5432/chunav
+      CORS_ORIGINS: http://localhost:8000
+      MAX_CANDIDATES: "8"
+    ports:
+      - "8000:8000"
+    restart: unless-stopped
+
+volumes:
+  pgdata:
