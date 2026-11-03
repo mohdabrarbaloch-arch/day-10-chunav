@@ -36,3 +36,6 @@ build/
 
 # Logs
 *.log
+
+# Screenshots are hosted and referenced by URL in the README, not committed
+screenshots/
