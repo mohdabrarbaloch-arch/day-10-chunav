@@ -82,7 +82,7 @@ Expected result:
 
 ```
 #1  Logistic Regression          0.6998 ±0.0381   lift +0.1098
-#2  k-NN (k=11)                  0.6725 ±0.0351   lift +0.0825
+#2  k-NN (k=11)                  0.6724 ±0.0351   lift +0.0824
 #3  k-NN (k=5)                   0.6600 ±0.0141   lift +0.0700
 #4  Random Forest (12 trees)     0.6251 ±0.0474   lift +0.0351
     baseline (majority class)    0.5900

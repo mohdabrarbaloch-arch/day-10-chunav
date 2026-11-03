@@ -70,6 +70,30 @@ weak log-odds on purpose. A tool that reported 0.95 here would be lying.
 
 ---
 
+## Screenshots
+
+**The leaderboard** — baseline in its own column, lift in the metric's units, and a relative bar so a model that barely clears the base rate looks like one:
+
+![Leaderboard](https://static.teamily.ai/sites/f5348921-52dc-48e1-bafd-82f54e96c932/documents/day-10-chunav-screenshots/05-leaderboard.jpg)
+
+**Sign in** — the demo button fills the seeded credentials:
+
+![Sign in](https://static.teamily.ai/sites/f5348921-52dc-48e1-bafd-82f54e96c932/documents/day-10-chunav-screenshots/01-login.jpg)
+
+**Column profile** — types inferred before anything is saved:
+
+![Profile](https://static.teamily.ai/sites/f5348921-52dc-48e1-bafd-82f54e96c932/documents/day-10-chunav-screenshots/03-profile.jpg)
+
+**Scoring new rows** — the winner refit on the full dataset:
+
+![Predict](https://static.teamily.ai/sites/f5348921-52dc-48e1-bafd-82f54e96c932/documents/day-10-chunav-screenshots/06-predict.jpg)
+
+**Mobile (390px)** — no horizontal overflow, the email drops out of the header before the sign-out button does:
+
+<img src="https://static.teamily.ai/sites/f5348921-52dc-48e1-bafd-82f54e96c932/documents/day-10-chunav-screenshots/07-mobile.jpg" width="300" alt="Mobile">
+
+---
+
 ## Quick start
 
 ```bash
